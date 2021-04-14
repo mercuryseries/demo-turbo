@@ -1,0 +1,15 @@
+.turbo-progress-bar {
+    height: 10px;
+    background-color: orange;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.alert-success {
+    color: green;
+    font-weight: bold;
+}
