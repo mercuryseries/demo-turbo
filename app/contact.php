@@ -3,19 +3,19 @@
 
     if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
         if (empty($_POST['name']) || strlen($_POST['name']) < 2) {
-            $errors['name'] = 'Invalid name';
+            $errors['name'] = 'The name should be at least 2 characters long.';
         }
 
         if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errors['email'] = 'Invalid email';
+            $errors['email'] = 'You need to enter a valid email address.';
         }
 
         if (empty($_POST['message']) || strlen($_POST['message']) < 10) {
-            $errors['message'] = 'Invalid message';
+            $errors['message'] = 'The message should be at least 10 characters long.';
         }
 
         if (empty($errors)) {
-            // send mail...
+            // send mail here...
             
             if (str_contains(getallheaders()['Accept'], 'text/vnd.turbo-stream.html')) {
                 header('Content-Type: text/vnd.turbo-stream.html');
@@ -27,6 +27,7 @@
             $_SESSION['success'] = "Message sent! We'll get back to you very soon";
             
             header('Location: /');
+            die;
         } else {
             http_response_code(422);
         }
