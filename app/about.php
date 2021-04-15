@@ -18,7 +18,7 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti culpa nihil. Perspiciatis eius velit fugit iure enim optio nemo accusantium iusto, voluptatem, placeat? Voluptatem vitae aliquid molestiae, provident ipsam?
             </p>
-            <p><a href="https://parlonscode.com">Go to Parlons Code</a></p>
+            <p><a class="btn-link" href="https://parlonscode.com">Go to Parlons Code</a></p>
         </div>
     </main>
 </body>
