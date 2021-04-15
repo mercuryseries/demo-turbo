@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-const BASE_DIR = __DIR__ . '/../app';
+const APP_DIR = __DIR__ . '/../app/';
 
-require_once match ($_SERVER['REQUEST_URI']) {
-    '/' => BASE_DIR . '/home.php',
-    '/about' => BASE_DIR . '/about.php',
-    '/help' => BASE_DIR . '/help.php',
-    '/contact' => BASE_DIR . '/contact.php',
-    default => BASE_DIR . '/404.php',
+require_once APP_DIR . match ($_SERVER['REQUEST_URI']) {
+    '/' => 'home.php',
+    '/about' => 'about.php',
+    '/help' => 'help.php',
+    '/contact' => 'contact.php',
+    default => '404.php',
 };
