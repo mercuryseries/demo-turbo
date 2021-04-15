@@ -49,6 +49,7 @@
 <body>
     <?php require_once 'partials/_nav.php'; ?>
     <?php require_once 'partials/_flash_messages.php'; ?>
+    
     <main class="main-content">
         <h1 class="text-center">Contact</h1>
         <div id="contact_form" class="contact-form">

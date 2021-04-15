@@ -12,6 +12,7 @@
 <body>
     <?php require_once 'partials/_nav.php'; ?>
     <?php require_once 'partials/_flash_messages.php'; ?>
+    
     <main class="main-content">
         <div class="jumbotron">
             <h1>About</h1>
