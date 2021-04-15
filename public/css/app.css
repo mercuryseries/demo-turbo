@@ -1,3 +1,7 @@
+@import "./variables.css" screen;
+@import "./global.css" screen;
+@import "./nav.css" screen;
+@import "./contact.css" screen;
 .turbo-progress-bar {
     height: 10px;
     background-color: orange;

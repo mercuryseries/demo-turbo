@@ -10,11 +10,14 @@
 <body>
     <?php require_once 'partials/_nav.php'; ?>
     <?php require_once 'partials/_flash_messages.php'; ?>
-    
-    <h1>404 Not Found 😜</h1>
+    <main class="main-content">
+        <div class="jumbotron">
+            <h1>404 Not Found 😜</h1>
+            <p>
+                Please go back <a href="/">home</a>.
+            </p>
+        </div>
+    </main>
 
-    <p>
-        Please go back <a href="/">home</a>.
-    </p>
 </body>
 </html>

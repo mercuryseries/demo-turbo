@@ -49,39 +49,39 @@
 <body>
     <?php require_once 'partials/_nav.php'; ?>
     <?php require_once 'partials/_flash_messages.php'; ?>
+    <main class="main-content">
+        <h1 class="text-center">Contact</h1>
+        <div id="contact_form" class="contact-form">
+            <form action="/contact" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Ex: John Doe" required value="<?= $_POST['name'] ?? '' ?>">
+                    <?php if (isset($errors['name'])): ?>
+                        <div class="error-message"><?= $errors['name'] ?></div>
+                    <?php endif; ?>
+                </div>
 
-    <h1>Contact</h1>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: johndoe@example.com" required value="<?= $_POST['email'] ?? '' ?>">
+                    <?php if (isset($errors['email'])): ?>
+                        <div class="error-message"><?= $errors['email'] ?></div>
+                    <?php endif; ?>
+                </div>
 
-    <div id="contact_form">
-        <form action="/contact" method="post">
-            <div>
-                <label for="name">Name:</label><br>
-                <input type="text" name="name" id="name" placeholder="Ex: John Doe" required value="<?= $_POST['name'] ?? '' ?>">
-                <?php if (isset($errors['name'])): ?>
-                    <div class="error-message"><?= $errors['name'] ?></div>
-                <?php endif; ?>
-            </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Please enter your message here..." required><?= $_POST['message'] ?? '' ?></textarea>
+                    <?php if (isset($errors['message'])): ?>
+                        <div class="error-message"><?= $errors['message'] ?></div>
+                    <?php endif; ?>
+                </div>
 
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" placeholder="Ex: johndoe@example.com" required value="<?= $_POST['email'] ?? '' ?>">
-                <?php if (isset($errors['email'])): ?>
-                    <div class="error-message"><?= $errors['email'] ?></div>
-                <?php endif; ?>
-            </div>
-
-            <div>
-                <label for="message">Name:</label><br>
-                <textarea name="message" id="message" placeholder="Please enter your message here..." required><?= $_POST['message'] ?? '' ?></textarea>
-                <?php if (isset($errors['message'])): ?>
-                    <div class="error-message"><?= $errors['message'] ?></div>
-                <?php endif; ?>
-            </div>
-
-            <div>
-                <button type="submit" formnovalidate>Send</button>
-            </div>
-        </form>
-    </div>
+                <div>
+                    <button type="submit" formnovalidate>Send</button>
+                </div>
+            </form>
+        </div>
+    </main>  
 </body>
 </html>

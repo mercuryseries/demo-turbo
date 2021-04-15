@@ -1,0 +1,21 @@
+nav{
+  background: var(--background-color);
+  color: var(--light);
+  padding: .4em;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+nav li{
+  padding: .4em .8em;
+  transition: color .3s ease-out;
+  text-transform: uppercase;
+}
+nav li:hover{
+  color: var(--link-color);
+}
