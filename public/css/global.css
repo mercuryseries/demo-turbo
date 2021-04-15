@@ -32,6 +32,7 @@ textarea{
   min-height: 200px;
   resize: none;
 }
+.btn-primary,
 button{
   padding: .6em 1.6em;
   background: var(--primary-color);
@@ -47,8 +48,16 @@ button{
   cursor: pointer;
   transition: background-color .3s ease-out;
 }
+.btn-primary:hover
 button:active, button:hover{
   background-color: var(--primary-hover-color);
+}
+.btn-link{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.btn-link:hover{
+  text-decoration: none;
 }
 .text-center
 {
