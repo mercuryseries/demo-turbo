@@ -26,6 +26,7 @@
 
             $_SESSION['success'] = "Message sent! We'll get back to you very soon";
             
+            http_response_code(303);
             header('Location: /');
             die;
         } else {
