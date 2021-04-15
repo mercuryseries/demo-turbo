@@ -1,21 +1,21 @@
-nav{
+nav {
   background: var(--background-color);
   color: var(--light);
-  padding: .4em;
+  padding: 0.4em;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }
-nav li{
-  padding: .4em .8em;
-  transition: color .3s ease-out;
+nav li {
+  padding: 0.4em 0.8em;
+  transition: color 0.3s ease-out;
   text-transform: uppercase;
 }
-nav li:hover{
+nav li:hover {
   color: var(--link-color);
 }
