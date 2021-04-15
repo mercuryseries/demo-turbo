@@ -2,15 +2,15 @@
     $errors = [];
 
     if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
-        if (empty($_POST['name']) || strlen($_POST['name']) < 2) {
+        if (strlen($_POST['name']) < 2) {
             $errors['name'] = 'The name should be at least 2 characters long.';
         }
 
-        if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = 'You need to enter a valid email address.';
         }
 
-        if (empty($_POST['message']) || strlen($_POST['message']) < 10) {
+        if (strlen($_POST['message']) < 10) {
             $errors['message'] = 'The message should be at least 10 characters long.';
         }
 
