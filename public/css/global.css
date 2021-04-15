@@ -1,0 +1,77 @@
+*,*::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgb(50, 50, 50);
+  background: #fefefe;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+label{
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+input, textarea{
+  padding: .8em .4em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: inherit;
+  outline: none;
+  box-shadow: none;
+}
+textarea{
+  min-height: 200px;
+  resize: none;
+}
+.btn-primary,
+button{
+  padding: .6em 1.6em;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  align-self: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: inherit;
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color .3s ease-out;
+}
+.btn-primary:hover
+button:active, button:hover{
+  background-color: var(--primary-hover-color);
+}
+.btn-link{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.btn-link:hover{
+  text-decoration: none;
+}
+.text-center
+{
+  text-align: center;
+}
+.jumbotron{
+  background: #e9ecef;
+  padding: .8em;
+  margin: .4em;
+}
+.container,
+.main-content{
+  width: 1050px;
+  max-width: calc(100% - 2em);
+  margin: 0 auto;
+}
+.main-content{padding: .8em 0;}

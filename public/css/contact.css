@@ -1,0 +1,12 @@
+.contact-form{
+  width: 800px;
+  max-width: 100%;
+  padding: .8em;
+  background: #e9ecef;
+  margin: 0 auto;
+}
+.contact-form form > div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
