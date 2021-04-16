@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 
     <script type="module" src="https://cdn.skypack.dev/@hotwired/turbo"></script>
+    <script src="/js/app.js"></script>
 </head>
 <body>
     <?php require_once 'partials/_nav.php'; ?>
